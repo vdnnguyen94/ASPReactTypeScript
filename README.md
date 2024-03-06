@@ -1,4 +1,4 @@
-# Trading Web Application README
+# Trading Web Application
 
 Welcome to my Trading Web Application! Below is an overview of the application's architecture, technologies used, and instructions for setting up and deploying the application.
 https://tradingwebasp.azurewebsites.net/
