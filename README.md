@@ -5,6 +5,14 @@ https://tradingwebasp.azurewebsites.net/
 ## Overview
 
 My Trading Web Application is built using ASP.NET on the server-side with AzureSQL for database management. On the client-side, I have utilized Node React with TypeScript. The application allows users to perform stock trading activities and manage their transactions efficiently.
+## Technologies Used
+
+- ASP.NET Core
+- Entity Framework Core
+- Azure SQL Database
+- TypeScript
+- React TSX
+- Node TS
 
 ### APIs
 
