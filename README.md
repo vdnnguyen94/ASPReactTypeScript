@@ -1,7 +1,7 @@
 # Trading Web Application README
 
 Welcome to my Trading Web Application! Below is an overview of the application's architecture, technologies used, and instructions for setting up and deploying the application.
-
+https://tradingwebasp.azurewebsites.net/
 ## Overview
 
 My Trading Web Application is built using ASP.NET on the server-side with AzureSQL for database management. On the client-side, I have utilized Node React with TypeScript. The application allows users to perform stock trading activities and manage their transactions efficiently.
