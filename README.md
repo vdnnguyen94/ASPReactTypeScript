@@ -13,12 +13,10 @@ I utilize third-party APIs for fetching live stock prices and other indicators f
 ## Server
 
 ### Technologies Used
-- ASP.NET for developing APIs using MVC controllers
-- Entity Framework for CRUD operations and data management
+- ASP.NET for developing APIs using controllers with Entity Framework for CRUD operations and data management
 - AzureSQL for database storage
 
 ### Features
-- Utilizes MVC architecture for API development
 - Provides RESTful APIs for user management, stock trading, and transaction records
 - Easy data migration with Entity Framework for updating data schema
 
