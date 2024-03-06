@@ -1,0 +1,1 @@
+C:\Users\Admin\source\repos\TradingWebApp\tradingwebapp.client\obj\Release\tradingwebapp.client.esproj.CoreCompileInputs.cache

@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "http://localhost:5099", // Replace with your ASP.NET server's address
+    "secure": false
+  }
+}
