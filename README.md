@@ -40,6 +40,17 @@ I utilize third-party APIs for fetching live stock prices and other indicators f
 - Utilizes React for state management, including user input validation before sending data to the server
 - Implements cookie-based authentication to reduce the need for repeated sign-ins
 
+#### BuyPage Component
+The BuyPage component allows users to search for stock quotes, view their current portfolio, and purchase stocks. 
+It provides real-time stock data, calculates total costs, and ensures users have sufficient funds before completing transactions.
+
+#### PageTransaction Component
+The PageTransaction component displays a user's transaction history, including details such as transaction type, stock symbol, shares, 
+unit price, and total values. It also shows the user's current balance with an option to toggle its visibility.
+#### Login Component
+The Login component provides a simple user authentication interface, allowing users to enter their username and password to log in. 
+It displays success or error messages based on the login attempt and redirects the user to the main page upon successful authentication.
+
 # <span style="color:red">START APPLICATION</span>
 
 ### For Client

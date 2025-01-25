@@ -1,11 +1,13 @@
 /* Size for brand */
+/* Ensures the brand name appears prominently */
 nav .navbar-brand {
-    font-size: xxx-large;
+    font-size: xxx-large; 
 }
 
+/* Makes navigation links visually distinct */
 .navbar-nav .nav-item .nav-link {
-    font-weight: bold;
-    font-size: x-large; 
+    font-weight: bold; 
+    font-size: x-large;
 }
 
 /* Colors for brand */
@@ -24,6 +26,7 @@ nav .navbar-brand .yellow {
 nav .navbar-brand .green {
     color: #2e944b;
 }
+/* Main content styling */
 .Main {
     margin-top: 15px;
     margin-left: 20px;
