@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 .vs/
+
+# Ignore the obj and Properties directories
+obj/
+Properties/
