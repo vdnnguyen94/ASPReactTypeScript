@@ -3,6 +3,12 @@ import { readUser } from './api-user';
 import { readStock, Stock } from './api-stock';
 import { lookup } from './api-quote';
 
+//Hello Van Nguyen
+/*
+The MainApp page displays a user’s portfolio, showing their cash balance, stock holdings, total stock value, 
+and overall assets. It fetches data in real-time, calculates key metrics, and organizes stock details 
+in a table for easy viewing.
+*/
 const MainApp: React.FC = () => {
     const [userData, setUserData] = useState<{ username: string; cash: number; } | null>(null);
     const [stocks, setStocks] = useState<Stock[]>([]);
