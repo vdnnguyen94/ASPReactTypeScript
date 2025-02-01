@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ngEO0dJwvZY=",
+  "dgSpecHash": "np0DVMsS4Rg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\ASPReactTypeScript\\TradingWebApp.Server\\TradingWebApp.Server.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\ASPReactTypeScript\\TradingWebApp.Server\\TradingWebApp.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

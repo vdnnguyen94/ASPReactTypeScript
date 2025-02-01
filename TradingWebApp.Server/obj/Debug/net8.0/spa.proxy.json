@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:5173",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "C:\\Users\\Admin\\Source\\Repos\\ASPReactTypeScript\\TradingWebApp.Server\\..\\tradingwebapp.client",
+"WorkingDirectory": "C:\\Users\\Admin\\source\\repos\\ASPReactTypeScript\\TradingWebApp.Server\\..\\tradingwebapp.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

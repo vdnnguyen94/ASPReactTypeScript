@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { loginUser } from './api-user';
 
 const Login: React.FC = () => {
@@ -22,6 +22,22 @@ const Login: React.FC = () => {
         }
     };
 
+    // 🔹 Function to auto-fill demo login credentials
+    const handleDemoLogin = async () => {
+        setUsername('tradingbot1');
+        setPassword('qwe123');
+
+        try {
+            await loginUser('tradingbot1', 'qwe123');
+            setSuccess(true);
+            setError(null);
+            window.location.href = '/';
+        } catch (err: any) {
+            setError(err.message);
+            setSuccess(false);
+        }
+    };
+
     return (
         <div className="mb-3 mb-3-custom-width">
             <h2 className="center2">User Login</h2>
@@ -35,6 +51,8 @@ const Login: React.FC = () => {
                     <input className="form-control" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </div>
                 <button className="btn btn-primary btnsp" type="submit">Login</button>
+                {/* 🔹 Demo Login Button */}
+                <button type="button" className="btn btn-secondary btnsp" onClick={handleDemoLogin}> Demo Login </button>
             </form>
             {error && <div style={{ color: 'red' }}>{error}</div>} {/* Display error message if exists */}
             {success && <div style={{ color: 'green' }}>Login successful!</div>} {/* Display success message if login is successful */}

@@ -13,6 +13,7 @@ const MainApp: React.FC = () => {
     const [userData, setUserData] = useState<{ username: string; cash: number; } | null>(null);
     const [stocks, setStocks] = useState<Stock[]>([]);
     const [totalValues, setTotalValues] = useState<number>(0);
+    const [balance, setBalance] = useState<number>(0);
     const [totalAssets, setTotalAssets] = useState<number>(0);
     // Make a Change Hello Van Nguyen
     useEffect(() => {
@@ -36,7 +37,8 @@ const MainApp: React.FC = () => {
                     return total + (stock.price * stock.shares);
                 }, 0);
                 setTotalValues(totalValues);
-
+                const userBalance = userData?.cash ? userData.cash : 0;
+                setBalance(userBalance);
                 const assets = userData?.cash ? userData.cash + totalValues : totalValues;
                 setTotalAssets(assets);
             } catch (error: any) {
@@ -76,6 +78,10 @@ const MainApp: React.FC = () => {
                         <tr className="table-info screensize0">
                             <th className="col-xs-6 screensize1">Your Stock Worths</th>
                             <td className="col-xs-6 screensize1">${totalValues.toFixed(2)}</td>
+                        </tr>
+                        <tr className="table-info screensize0">
+                            <th className="col-xs-6 screensize1">Your Balance</th>
+                            <td className="col-xs-6 screensize1">${balance.toFixed(2)}</td>
                         </tr>
                         <tr className="table-info screensize0">
                             <th className="col-xs-6 screensize1">Your Total Assets</th>

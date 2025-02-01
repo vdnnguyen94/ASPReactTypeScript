@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "sREqD4TtbEoWKbuYXfiCX7jBRMFNn82qvRGy8z99FFE=",
+  "Hash": "84nYIeXWeDBVaTkdJJAbVX9JxvH7HpvcNcOUze1y6nw=",
   "Source": "TradingWebApp.Server",
   "BasePath": "_content/TradingWebApp.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Admin\\Source\\Repos\\ASPReactTypeScript\\tradingwebapp.client\\tradingwebapp.client.esproj",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\ASPReactTypeScript\\tradingwebapp.client\\tradingwebapp.client.esproj",
       "Version": 2,
       "Source": "tradingwebapp.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
