@@ -14,7 +14,7 @@ const MainApp: React.FC = () => {
     const [stocks, setStocks] = useState<Stock[]>([]);
     const [totalValues, setTotalValues] = useState<number>(0);
     const [totalAssets, setTotalAssets] = useState<number>(0);
-
+    // Make a Change Hello Van Nguyen
     useEffect(() => {
         const fetchData = async () => {
             try {

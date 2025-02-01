@@ -20,7 +20,12 @@ namespace TradingWebApp.Server.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Configure entity relationships, constraints, etc. here
+            modelBuilder.Entity<Stock>()
+                .HasKey(s => s.StockID); // Explicitly set the primary key to StockID
 
+            modelBuilder.Entity<Stock>()
+                .Property(s => s.StockID)
+                .ValueGeneratedOnAdd(); // Ensure it's auto-generated
 
             modelBuilder.Entity<Transaction>()
                 .Property(t => t.ShareValue)

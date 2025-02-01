@@ -6,7 +6,8 @@ namespace TradingWebApp.Server.Models
 {
     public class Stock
     {
-        [Key]
+        [Key] // Explicitly define the primary key
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // Ensure auto-increment
         public int StockID { get; set; }
         [Required]
         [Column(TypeName = "nvarchar(10)")]

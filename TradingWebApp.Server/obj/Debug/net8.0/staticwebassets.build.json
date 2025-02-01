@@ -1,20 +1,20 @@
 {
   "Version": 1,
-  "Hash": "J1dBia+00Pa/sHFpvTBy9Ln7bf1OsZk1uUdTaSfZiUw=",
+  "Hash": "sREqD4TtbEoWKbuYXfiCX7jBRMFNn82qvRGy8z99FFE=",
   "Source": "TradingWebApp.Server",
   "BasePath": "_content/TradingWebApp.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TradingWebApp\\tradingwebapp.client\\tradingwebapp.client.esproj",
+      "Identity": "C:\\Users\\Admin\\Source\\Repos\\ASPReactTypeScript\\tradingwebapp.client\\tradingwebapp.client.esproj",
       "Version": 2,
       "Source": "tradingwebapp.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],

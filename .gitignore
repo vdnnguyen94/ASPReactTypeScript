@@ -24,7 +24,10 @@ dist-ssr
 *.sw?
 
 .vs/
-
+# Ignore build and obj files
+obj/
+bin/
 # Ignore the obj and Properties directories
 obj/
 Properties/
+

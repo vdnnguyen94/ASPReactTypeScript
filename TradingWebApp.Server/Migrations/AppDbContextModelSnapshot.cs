@@ -46,8 +46,6 @@ namespace TradingWebApp.Server.Migrations
 
                     b.HasKey("StockID");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("Stocks");
                 });
 
@@ -88,8 +86,6 @@ namespace TradingWebApp.Server.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("Transactions");
                 });
 
@@ -118,28 +114,6 @@ namespace TradingWebApp.Server.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("TradingWebApp.Server.Models.Stock", b =>
-                {
-                    b.HasOne("TradingWebApp.Server.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("TradingWebApp.Server.Models.Transaction", b =>
-                {
-                    b.HasOne("TradingWebApp.Server.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

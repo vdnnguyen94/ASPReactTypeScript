@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\TradingWebApp\\TradingWebApp.Server\\TradingWebApp.Server.csproj": {}
+    "C:\\Users\\Admin\\Source\\Repos\\ASPReactTypeScript\\TradingWebApp.Server\\TradingWebApp.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\TradingWebApp\\TradingWebApp.Server\\TradingWebApp.Server.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\ASPReactTypeScript\\TradingWebApp.Server\\TradingWebApp.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\TradingWebApp\\TradingWebApp.Server\\TradingWebApp.Server.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\ASPReactTypeScript\\TradingWebApp.Server\\TradingWebApp.Server.csproj",
         "projectName": "TradingWebApp.Server",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\TradingWebApp\\TradingWebApp.Server\\TradingWebApp.Server.csproj",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\ASPReactTypeScript\\TradingWebApp.Server\\TradingWebApp.Server.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\TradingWebApp\\TradingWebApp.Server\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\ASPReactTypeScript\\TradingWebApp.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,6 +65,12 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -99,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

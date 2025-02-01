@@ -12,8 +12,8 @@ using TradingWebApp.Server.Data;
 namespace TradingWebApp.Server.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240305182012_AddStockIDColumn")]
-    partial class AddStockIDColumn
+    [Migration("20250131230922_FixUserUniqueIndex")]
+    partial class FixUserUniqueIndex
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,8 +48,6 @@ namespace TradingWebApp.Server.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("StockID");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Stocks");
                 });
@@ -91,8 +89,6 @@ namespace TradingWebApp.Server.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("Transactions");
                 });
 
@@ -121,28 +117,6 @@ namespace TradingWebApp.Server.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("TradingWebApp.Server.Models.Stock", b =>
-                {
-                    b.HasOne("TradingWebApp.Server.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("TradingWebApp.Server.Models.Transaction", b =>
-                {
-                    b.HasOne("TradingWebApp.Server.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }
