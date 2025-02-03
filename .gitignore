@@ -27,7 +27,6 @@ dist-ssr
 # Ignore build and obj files
 obj/
 bin/
-# Ignore the obj and Properties directories
-obj/
+Debug/
+Release/
 Properties/
-
