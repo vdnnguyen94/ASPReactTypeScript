@@ -1,5 +1,10 @@
 {
   "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:TradingDatabase",
+      "dynamicId": null
+    },
     "apis1": {
       "type": "apis"
     }
